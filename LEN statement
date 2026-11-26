@@ -1,0 +1,31 @@
+#Skills developed: Use the len statement, remove spaces, handle with variables and work with conditions.
+
+print("Hi.")
+print("This code is being written by me.")
+print("I guess that it's a good way to review what this course has taught me.")
+print("Anyways. I hope this somehow helps me and you.")
+print(":)")
+print("")
+
+insert = str(input("Write something here: "))
+print("Press Y to confirm, or N to deny.")
+requirement1 = str(input("Do you wanna remove all the whitespaces?")).upper().replace(" ", "")
+if requirement1 == "Y":
+    print("Ok, i'm removing the whitespaces.")
+    print("You've written:")
+    print(insert.replace(" ", ""))
+    new_word = len(insert.replace(" ", ""))
+    if new_word == 1:
+        print("The word has only {} letter.".format(new_word))
+    else:
+        print("The word has {} letters.".format(new_word))
+elif requirement1 == "N":
+    print("Ok, i'm not removing the whitespaces.")
+    print("You've written:")
+    print(insert)
+    new_word1 = len(insert)
+    if new_word1 == 1:
+        print("The word has only {} letter.".format(new_word1))
+    else:
+        print("The word written has {} letters.".format(new_word1))
+#end
